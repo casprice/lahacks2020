@@ -3,7 +3,7 @@ var twiliochat = (function() {
 
   var GENERAL_CHANNEL_UNIQUE_NAME = 'general';
   var GENERAL_CHANNEL_NAME = 'General Channel';
-  var MESSAGES_HISTORY_LIMIT = 50;
+  var MESSAGES_HISTORY_LIMIT = 100;
 
   var $channelList;
   var $inputText;
@@ -30,7 +30,9 @@ var twiliochat = (function() {
     $newChannelInput = $('#new-channel-input');
     $typingRow = $('#typing-row');
     $typingPlaceholder = $('#typing-placeholder');
-    $usernameInput.focus();
+    tc.username = "You";
+    fetchAccessToken(tc.username, connectMessagingClient);
+    $inputText.focus();
     $usernameInput.on('keypress', handleUsernameInputKeypress);
     $inputText.on('keypress', handleInputTextKeypress);
     $newChannelInput.on('keypress', tc.handleNewChannelInputKeypress);

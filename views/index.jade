@@ -15,7 +15,7 @@ html(lang='en')
         .col-md-4.col-md-offset-4
           .row
             #logo-column.col-md-2.col-md-offset-5
-              img#logo-image(src="/img/twilio-logo.png")
+              
           #status-row.row.disconnected
             .col-md-7.right-align
               span#status-span
@@ -32,15 +32,7 @@ html(lang='en')
           #typing-row.row.disconnected
             p#typing-placeholder
           #input-div.row
-            textarea#input-text(disabled='true', placeholder='   Your message')
-          #connect-panel.disconnected.row.with-shadow
-            .row
-              .col-md-12
-                label(for='username-input') Username: 
-                input#username-input(type='text', placeholder='username')
-            .row
-              .col-md-12
-                img#connect-image(src="/img/connect-image.png")
+            textarea#input-text(placeholder='   Your message')
     // HTML Templates
     script#message-template(type='text/html').
       <div class="row entire-message">
