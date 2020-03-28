@@ -117,13 +117,27 @@ body {
 }
 
 .entire-message {
-  margin: 10px; 
+  margin: 10px;
   background-color: #E5E5E5;
+  border-radius: 10px;
 }
 
-.own-message {
+.own-message .entire-message {
   background-color: #6A93D1 !important;
 }
+
+.own-message .message-username {
+  color: rgb(210, 210, 210);
+}
+
+.own-message .message-date{
+  color: rgb(234, 230, 230);
+}
+
+.own-message .message-body{
+  color: rgb(254, 254, 254);
+}
+
 .message-info-row {
   padding-top: 0.7vh;
   padding-bottom: 0.5vh;
