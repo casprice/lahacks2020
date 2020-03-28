@@ -1,10 +1,10 @@
 doctype html
 html(lang='en')
   head
-    link(href='https://fonts.googleapis.com/css?family=Oswald:400,300|Source+Sans+Pro:400,300', rel='stylesheet', type='text/css')
+    link(href='https://fonts.googleapis.com/css?family=DM+Sans:400,300|Source+Sans+Pro:400,300', rel='stylesheet', type='text/css')
     meta(charset='utf-8')
     meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no')
-    title Twilio Chat
+    title hello 
     // CSS
     link(rel='stylesheet', href='//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css')
     link(rel='stylesheet', href='//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css')
@@ -17,9 +17,6 @@ html(lang='en')
             #logo-column.col-md-2.col-md-offset-5
               img#logo-image(src="/img/twilio-logo.png")
           #status-row.row.disconnected
-            .col-md-5.left-align
-              span#delete-channel-span
-                b Delete current channel
             .col-md-7.right-align
               span#status-span
                 | Connected as 
@@ -29,11 +26,7 @@ html(lang='en')
                 b x Leave
       #container.row
         #channel-panel.col-md-offset-2.col-md-2
-          #channel-list.row.not-showing
-          #new-channel-input-row.row.not-showing
-            textarea#new-channel-input.channel-element(placeholder='Type channel name', rows='1', maxlength='20')
-          .row
-            img#add-channel-image(src="/img/add-channel-image.png")
+            
         #chat-window.col-md-4.with-shadow
           #message-list.row.disconnected
           #typing-row.row.disconnected
@@ -50,7 +43,7 @@ html(lang='en')
                 img#connect-image(src="/img/connect-image.png")
     // HTML Templates
     script#message-template(type='text/html').
-      <div class="row no-margin">
+      <div class="row entire-message">
       <div class="row no-margin message-info-row" style="">
       <div class="col-md-8 left-align"><p data-content="username" class="message-username"></p></div>
       <div class="col-md-4 right-align"><span data-content="date" class="message-date"></span></div>

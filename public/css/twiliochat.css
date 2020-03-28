@@ -2,7 +2,7 @@ html {
   height: 100%;
   padding:0;
   margin:0;
-  background-color: #71271c;
+  background-color: #ffffff;
 }
 body {
   position: absolute;
@@ -12,16 +12,13 @@ body {
   margin:0;
   height: 100%;
   width:100%;
-  background: #71271c; /* Old browsers */
-  background: -moz-linear-gradient(-45deg,  #71271c 0%, #7c362e 47%, #a53829 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(-45deg,  #71271c 0%,#7c362e 47%,#a53829 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(135deg,  #71271c 0%,#7c362e 47%,#a53829 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background: #e6e6e6; /* Old browsers */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#71271c', endColorstr='#a53829',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-  font-family: 'Oswald', 'Source Sans Pro', sans-serif;;
+  font-family: 'DM Sans', 'Source Sans Pro', sans-serif;;
 }
 
 #chat-window {
-  background-color: rgba(255,255,255,0.7);
+  background-color: rgba(255,255,255,0.5);
   height: 100%;
 }
 #container {
@@ -38,7 +35,7 @@ body {
   height: 3%;
   font-weight: lighter;
   font-size: small;
-  color: #BBA0A1;
+  color: #9E9E9E;
   vertical-align: bottom;
 }
 #typing-placeholder {
@@ -56,7 +53,7 @@ body {
 }
 #connect-panel {
   height: 15%;
-  background-color: #5B1913;
+  background-color: #6A93D1;
   text-align: center;
   color: #DEC4C3;
 }
@@ -80,8 +77,8 @@ body {
   padding-top: 1%;
   height: 100%;
   width: 100%;
-  background-color: #DED4D3;
-  color: #644F52;
+  background-color: #6A93D1;
+  color: #ffffff;
   font-weight: 300;
   border: 0;
   resize: none;
@@ -118,8 +115,14 @@ body {
 #new-channel-input-row.showing {
   display: block;
 }
+
+.entire-message {
+  margin: 10px; 
+  background-color: #E5E5E5;
+}
+
 .own-message {
-  background-color: #DDD3D2;
+  background-color: #6A93D1 !important;
 }
 .message-info-row {
   padding-top: 0.7vh;
@@ -131,21 +134,21 @@ body {
   text-justify: inter-word;
   font-size: small;
   font-weight: 300;
-  color: #644F52;
+  color: rgb(24, 24, 24);
 }
 .message-username {
   margin-left: 15px;
   margin-bottom: 5px;
   font-size: normal;
   font-weight: 400;
-  color: #5C5153;
+  color: rgb(63, 63, 63);
 }
 .message-date {
   margin-right: 15px;
   margin-bottom: 5px;
   font-weight: lighter;
-  font-size: normal;
-  color: #BA9F9F;
+  font-size: 11px;
+  color: rgb(124, 120, 120);
 }
 .no-margin {
   margin: 0;
