@@ -29,7 +29,7 @@ body {
 }
 #input-div {
   background-color: #DED4D3;
-  height: 5%;
+  height: 20%;
 }
 #typing-row {
   height: 3%;
@@ -83,11 +83,13 @@ body {
   border: 0;
   resize: none;
 }
+
+/*
 .with-shadow {
   -webkit-box-shadow: -5px 5px 0px 0px rgba(0,0,0,0.53);
   -moz-box-shadow: -5px 5px 0px 0px rgba(0,0,0,0.53);
   box-shadow: -5px 5px 0px 0px rgba(0,0,0,0.53);
-}
+}*/
 #channel-panel {
   border-left: 1px solid #864035;
   box-shadow: -1px 0px 0px 0px #5D1E18;
@@ -118,7 +120,8 @@ body {
 
 .entire-message {
   margin: 10px;
-  background-color: #E5E5E5;
+  /*background-color: #E5E5E5;*/
+  background-color: #dadada;
   border-radius: 10px;
 }
 
@@ -130,7 +133,7 @@ body {
 	width: 0;
 	height: 0;
 	border: 20px solid transparent;
-	border-right-color: #E5E5E5;
+	border-right-color: #dadada;
 	border-left: 0;
 	border-bottom: 0;
 	margin-top: -10px;
