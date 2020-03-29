@@ -149,11 +149,12 @@ body {
 	width: 0;
 	height: 0;
 	border: 20px solid transparent;
-	border-left-color: #6A93D1;
+	/*border-left-color: #6A93D1;*/
+  border-left-color: transparent;
 	border-right: 0;
 	border-bottom: 0;
 	margin-right: -10px;
-	margin-left: 295px;
+  margin-left: 300px;
 }
 
 .own-message .message-username {
