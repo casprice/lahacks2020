@@ -33,6 +33,7 @@ body {
 }
 #typing-row {
   height: 3%;
+  max-height: 10%;
   font-weight: lighter;
   font-size: small;
   color: #9E9E9E;
