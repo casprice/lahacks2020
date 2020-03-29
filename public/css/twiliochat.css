@@ -122,8 +122,38 @@ body {
   border-radius: 10px;
 }
 
+.entire-message:after {
+  content: '';
+	position: relative;
+	left: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 20px solid transparent;
+	border-right-color: #E5E5E5;
+	border-left: 0;
+	border-bottom: 0;
+	margin-top: -10px;
+	margin-left: -10px;
+}
+
 .own-message .entire-message {
   background-color: #6A93D1 !important;
+}
+
+.own-message .entire-message:after {
+  content: '';
+	position: relative;
+	right: 0;
+	bottom: 0;
+	width: 0;
+	height: 0;
+	border: 20px solid transparent;
+	border-left-color: #6A93D1;
+	border-right: 0;
+	border-bottom: 0;
+	margin-right: -10px;
+	margin-left: 300px;
 }
 
 .own-message .message-username {
@@ -153,7 +183,7 @@ body {
 .message-username {
   margin-left: 15px;
   margin-bottom: 5px;
-  font-size: normal;
+  font-size: lighter;
   font-weight: 400;
   color: rgb(63, 63, 63);
 }
